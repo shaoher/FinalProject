@@ -28,4 +28,12 @@ private:
         Chocolate("Milk Chocolate", 100),
         Chocolate("Dark Chocolate", 100),
         Chocolate("White Chocolate", 100)
-}
+};
+
+public:
+    void DisplayInventory() {
+        cout << "\nCurrent Inventory:" << endl;
+        for (int i = 0; i < 3; i++) {
+            cout << inventory[i].name << " , Quantity: " << inventory[i].quantity << endl; 
+        }
+    }
