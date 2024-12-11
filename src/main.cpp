@@ -52,7 +52,7 @@ public:
 
 int main() {
     ChocolateFactory factory;
-    cout << "\n Welcome to the Chocolate Factory! Please choose an option below." << endl;
+    cout << "\nWelcome to the Chocolate Factory! Please choose an option below." << endl;
     cout << "1. View Inventory." << endl;
     cout << "2. Update Inventory." << endl;
     cout << "3. Exit." << endl;
