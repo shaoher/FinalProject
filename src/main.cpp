@@ -36,6 +36,19 @@ public:
         for (int i = 0; i < 3; i++) {
             cout << inventory[i].name << " , Quantity: " << inventory[i].quantity << endl; 
         }
+    }
+
+    void updateInventory(int typeChoice, int quantity) {
+        if (typeChoice >= 1 && typeChoice <= 3) {
+            inventory[typeChoice - 1].quantity += quantity;
+            cout << "Inventory has been updated." << inventory[typeChoice - 1].name
+                << " now has " << inventory[typeChoice - 1].quantity << "items." << endl;
+        } else {
+            cout << "Invalid selection." << endl;
+        }
+    }
+};
+
 
 int main() {
     ChocolateFactory factory;
@@ -48,3 +61,24 @@ int main() {
     int choice;
     cout << "Enter your option here: ";
     cin >> choice;
+
+// 
+switch (choice) {
+    case 1: factory.DisplayInventory();
+    break;
+    case 2: {
+        cout << "\nPlease select an option below." << endl;
+        cout << "1. Milk Chocolate" << endl;
+        cout << "2. Dark Chocolate" << endl;
+        cout << "3. White Chocolate" << endl;
+
+        int typeChoice;
+        cin >> typeChoice;
+
+        int quantity;
+        cout << "Enter any number to add to the inventory or use a negative value to subtract: ";
+        cin >> quantity;
+
+        factory.updateInventory(typeChoice, quantity);
+        break;
+    }
