@@ -11,6 +11,7 @@ using namespace std;
 // Enum
 enum class ChocolateType {Milk, Dark, White};
 
+// Chocolate class
 class Chocolate {
 public: 
     string name;
@@ -18,3 +19,13 @@ public:
 
     Chocolate(string n, int q) : name(n), quantity(q) {}
 };
+
+// ChocolateFactory class
+// Array
+class ChocolateFactory {
+private:
+    Chocolate inventory[3] = {
+        Chocolate("Milk Chocolate", 100),
+        Chocolate("Dark Chocolate", 100),
+        Chocolate("White Chocolate", 100)
+}
