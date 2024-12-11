@@ -28,7 +28,7 @@ private:
         Chocolate("Milk Chocolate", 100),
         Chocolate("Dark Chocolate", 100),
         Chocolate("White Chocolate", 100)
-};
+    };
 
 public:
     void DisplayInventory() {
@@ -82,3 +82,10 @@ switch (choice) {
         factory.updateInventory(typeChoice, quantity);
         break;
     }
+
+    case 3:
+        cout << "Thank you for visiting the Chocolate Factory!" << endl;
+        break;
+    }
+    return 0;
+}
