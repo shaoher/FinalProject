@@ -11,3 +11,10 @@ using namespace std;
 // Enum
 enum class ChocolateType {Milk, Dark, White};
 
+class Chocolate {
+    pulic: 
+    string name;
+    int quantity;
+
+    Chocolate(string n, int q) : name(n), quantity(q) {}
+};
