@@ -43,3 +43,8 @@ int main() {
     cout << "1. View Inventory." << endl;
     cout << "2. Update Inventory." << endl;
     cout << "3. Exit." << endl;
+
+// type int, variable choice
+    int choice;
+    cout << "Enter your option here: ";
+    cin >> choice;
