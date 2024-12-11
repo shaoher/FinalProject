@@ -12,7 +12,7 @@ using namespace std;
 enum class ChocolateType {Milk, Dark, White};
 
 class Chocolate {
-    pulic: 
+public: 
     string name;
     int quantity;
 
