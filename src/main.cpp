@@ -42,7 +42,7 @@ public:
         if (typeChoice >= 1 && typeChoice <= 3) {
             inventory[typeChoice - 1].quantity += quantity;
             cout << "Inventory has been updated." << inventory[typeChoice - 1].name
-                << " now has " << inventory[typeChoice - 1].quantity << "items." << endl;
+                << " now has " << inventory[typeChoice - 1].quantity << " items." << endl;
         } else {
             cout << "Invalid selection." << endl;
         }
@@ -52,13 +52,14 @@ public:
 
 int main() {
     ChocolateFactory factory;
+    int choice;
+
+    while (true) {
     cout << "\nWelcome to the Chocolate Factory! Please choose an option below." << endl;
     cout << "1. View Inventory." << endl;
     cout << "2. Update Inventory." << endl;
     cout << "3. Exit." << endl;
 
-// type int, variable choice
-    int choice;
     cout << "Enter your option here: ";
     cin >> choice;
 
@@ -85,7 +86,9 @@ switch (choice) {
 
     case 3:
         cout << "Thank you for visiting the Chocolate Factory!" << endl;
-        break;
+        return 0;
+    default:
+    cout << "Invalid selection." << endl;
+    break;
     }
-    return 0;
 }
